@@ -1,0 +1,53 @@
+{
+    //"output": "DP-1", // Waybar output
+    //"layer": "top", // Waybar at top layer
+    "position": "top", // Waybar position (top|bottom|left|right)
+    "height": 20, // Waybar height (to be removed for auto height)
+    // "width": 2560, // Waybar width
+    // "spacing": 4, // Gaps between modules (4px)
+    // Choose the order of the modules
+    "modules-left": ["sway/workspaces", "sway/mode"],
+    //"modules-center": ["sway/window"],
+    "modules-center": ["mpd"],
+    "modules-right": ["battery", "clock", "tray"],
+    // Modules configuration 
+    "tray": {
+        //"icon-size": 21,
+        "spacing": 10
+    },
+    "clock": {
+        "timezone": "America/Los_Angeles",
+        "format": "󰥔 {:%D %R}",
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    }, 
+   "battery": {
+        "states": {
+            // "good": 95,
+            "warning": 30,
+            "critical": 15
+        },
+        // "adapter": "/sys/class/power_supply/hid-dc:2c:26:26:48:e8-battery",
+        "format": "{icon} {capacity}%",
+        "format-charging": " {capacity}%",
+        "format-plugged": " {capacity}%",
+        "format-alt": "{icon} {time}",
+        // "format-good": "", // An empty format will hide the module
+        // "format-full": "",
+        "format-icons": ["", "", "", "", ""]
+    }, 
+    "mpd": {
+    	// "server": "192.168.1.159",
+    	// "port": "6694",
+        "format": "{stateIcon} {artist} - {title} ",
+        "format-disconnected": "Disconnected ",
+        "format-stopped": "Stopped ",
+        "unknown-tag": "N/A",
+        "interval": 2,
+        "state-icons": {
+            "paused": "",
+            "playing": ""
+        },
+        "tooltip-format": "MPD (connected)",
+        "tooltip-format-disconnected": "MPD (disconnected)"
+    },
+}

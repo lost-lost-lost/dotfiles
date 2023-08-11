@@ -1,0 +1,21 @@
+[Default Applications]
+application/pdf=org.pwmt.zathura.desktop
+application/x-shellscript=editor.desktop
+image/png=imv.desktop
+image/jpeg=imv.desktop
+image/jpg=imv.desktop
+image/webp=imv.desktop
+image/svg+xml=gimp.desktop
+text/plain=nvim.desktop
+video/mp4=mpv.desktop
+video/x-matroska=mpv.desktop
+x-scheme-handler/http=firefox.desktop
+x-scheme-handler/https=firefox.desktop
+x-scheme-handler/mailto=userapp-Thunderbird-5KUG51.desktop
+message/rfc822=userapp-Thunderbird-5KUG51.desktop
+x-scheme-handler/mid=userapp-Thunderbird-5KUG51.desktop
+inode/directory=pcmanfm.desktop
+
+[Added Associations]
+x-scheme-handler/mailto=userapp-Thunderbird-5KUG51.desktop;
+x-scheme-handler/mid=userapp-Thunderbird-5KUG51.desktop;
